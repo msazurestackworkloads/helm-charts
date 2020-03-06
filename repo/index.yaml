@@ -1,0 +1,20 @@
+apiVersion: v1
+entries:
+  aks-helloworld:
+  - apiVersion: v1
+    created: "2020-03-05T21:59:58.507163-08:00"
+    description: A Helm chart for Kubernetes
+    digest: f21e5e8caf09d9b67466a571d7275703986dd6b87573492b47914fe180d01a70
+    name: aks-helloworld
+    urls:
+    - https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/aks-helloworld-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    created: "2020-03-05T21:59:58.506808-08:00"
+    description: A Helm chart for Kubernetes
+    digest: f4eb20e7116b24c4825861e6ff6f4303bbe83bcee4a7b2b6ea9fe6929852f34d
+    name: aks-helloworld
+    urls:
+    - https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/aks-helloworld-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-03-05T21:59:58.504806-08:00"
