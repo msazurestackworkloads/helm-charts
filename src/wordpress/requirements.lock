@@ -1,0 +1,6 @@
+dependencies:
+- name: mariadb
+  repository: https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/
+  version: 7.3.12
+digest: sha256:ee0df862caa187e9aedaed38287fb0e7b6822c1be3f8c9f28518a00f0d31da4e
+generated: "2020-02-28T13:36:51.88416+01:00"
