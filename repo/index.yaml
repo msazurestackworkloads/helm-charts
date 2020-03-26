@@ -2,7 +2,15 @@ apiVersion: v1
 entries:
   aks-helloworld:
   - apiVersion: v1
-    created: "2020-03-05T22:48:37.452031-08:00"
+    created: 2020-03-26T12:58:21.2532957-07:00
+    description: A Helm chart for Kubernetes
+    digest: 1fcd5b3807ab43fff108461cb0bce21e6ca953697cce3de7de7ae6336eae4e30
+    name: aks-helloworld
+    urls:
+    - https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/aks-helloworld-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v1
+    created: 2020-03-26T12:58:21.2532957-07:00
     description: A Helm chart for Kubernetes
     digest: f21e5e8caf09d9b67466a571d7275703986dd6b87573492b47914fe180d01a70
     name: aks-helloworld
@@ -10,7 +18,7 @@ entries:
     - https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/aks-helloworld-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
-    created: "2020-03-05T22:48:37.451499-08:00"
+    created: 2020-03-26T12:58:21.2532957-07:00
     description: A Helm chart for Kubernetes
     digest: f4eb20e7116b24c4825861e6ff6f4303bbe83bcee4a7b2b6ea9fe6929852f34d
     name: aks-helloworld
@@ -20,7 +28,7 @@ entries:
   mariadb:
   - apiVersion: v1
     appVersion: 10.3.22
-    created: "2020-03-05T22:48:37.456209-08:00"
+    created: 2020-03-26T12:58:21.2542957-07:00
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system. MariaDB Server is intended for mission-critical, heavy-load
       production systems as well as for embedding into mass-deployed software. Highly
@@ -47,14 +55,7 @@ entries:
   wordpress:
   - apiVersion: v1
     appVersion: 5.3.2
-    created: "2020-03-05T22:48:37.459789-08:00"
-    dependencies:
-    - condition: mariadb.enabled
-      name: mariadb
-      repository: https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/
-      tags:
-      - wordpress-database
-      version: 7.x.x
+    created: 2020-03-26T12:58:21.2562957-07:00
     description: Web publishing platform for building blogs and websites.
     digest: cef85db720e2f0cf6cda2b9b5e95c74ab85864fab4f178c5785aeeaa98dae931
     home: http://www.wordpress.com/
@@ -76,4 +77,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/wordpress-9.0.1.tgz
     version: 9.0.1
-generated: "2020-03-05T22:48:37.450202-08:00"
+generated: 2020-03-26T12:58:21.2532957-07:00
