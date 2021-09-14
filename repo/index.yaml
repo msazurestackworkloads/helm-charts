@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   aks-helloworld:
   - apiVersion: v1
-    created: 2020-03-30T15:24:16.0771805-07:00
+    created: "2021-09-14T15:29:55.94714-07:00"
     description: A Helm chart for Kubernetes
     digest: 1fcd5b3807ab43fff108461cb0bce21e6ca953697cce3de7de7ae6336eae4e30
     name: aks-helloworld
@@ -10,7 +10,7 @@ entries:
     - https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/aks-helloworld-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v1
-    created: 2020-03-30T15:24:16.0751728-07:00
+    created: "2021-09-14T15:29:55.945935-07:00"
     description: A Helm chart for Kubernetes
     digest: f21e5e8caf09d9b67466a571d7275703986dd6b87573492b47914fe180d01a70
     name: aks-helloworld
@@ -18,7 +18,7 @@ entries:
     - https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/aks-helloworld-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
-    created: 2020-03-30T15:24:16.0721688-07:00
+    created: "2021-09-14T15:29:55.944901-07:00"
     description: A Helm chart for Kubernetes
     digest: f4eb20e7116b24c4825861e6ff6f4303bbe83bcee4a7b2b6ea9fe6929852f34d
     name: aks-helloworld
@@ -28,7 +28,7 @@ entries:
   mariadb:
   - apiVersion: v1
     appVersion: 10.3.22
-    created: 2020-03-30T15:24:16.0812109-07:00
+    created: "2021-09-14T15:29:55.950375-07:00"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system. MariaDB Server is intended for mission-critical, heavy-load
       production systems as well as for embedding into mass-deployed software. Highly
@@ -55,7 +55,7 @@ entries:
   mongodb-replicaset:
   - apiVersion: v1
     appVersion: "3.6"
-    created: 2020-03-30T15:24:16.0822114-07:00
+    created: "2021-09-14T15:29:55.952779-07:00"
     description: NoSQL document-oriented database that stores JSON-like documents
       with dynamic schemas, simplifying the integration of data in content-driven
       applications.
@@ -77,11 +77,10 @@ entries:
   nginx-ingress:
   - apiVersion: v1
     appVersion: 0.30.0
-    created: 2020-03-30T15:24:16.0862109-07:00
+    created: "2021-09-14T15:29:55.958882-07:00"
     description: An nginx Ingress controller that uses ConfigMap to store the nginx
       configuration.
     digest: 9c310c55966af94cdfb903ab6b5c13946f8d718cb6efd86e32394f7cd2d5c0b7
-    engine: gotpl
     home: https://github.com/kubernetes/ingress-nginx
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
     keywords:
@@ -101,7 +100,7 @@ entries:
   tomcat:
   - apiVersion: v1
     appVersion: "7.0"
-    created: 2020-03-30T15:24:16.0862109-07:00
+    created: "2021-09-14T15:29:55.960335-07:00"
     description: Deploy a basic tomcat application server with sidecar as web archive
       container
     digest: b1ea7b57a89c2fbdd2a647df52804f62d512b5ad2d2a38e352a5c24e5e69c613
@@ -114,10 +113,28 @@ entries:
     urls:
     - https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/tomcat-0.4.1.tgz
     version: 0.4.1
+  vote-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-14T15:29:55.961332-07:00"
+    description: A Helm chart for Kubernetes
+    digest: a06451c5ad8cc7e4df86d6745842cc37f95fc009f1d479786a618c2f40625ca9
+    name: vote-app
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/vote-app-0.1.0.tgz
+    version: 0.1.0
   wordpress:
   - apiVersion: v1
     appVersion: 5.3.2
-    created: 2020-03-30T15:24:16.0912106-07:00
+    created: "2021-09-14T15:29:55.966602-07:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/
+      tags:
+      - wordpress-database
+      version: 7.x.x
     description: Web publishing platform for building blogs and websites.
     digest: cef85db720e2f0cf6cda2b9b5e95c74ab85864fab4f178c5785aeeaa98dae931
     home: http://www.wordpress.com/
@@ -139,4 +156,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/msazurestackworkloads/helm-charts/master/repo/wordpress-9.0.1.tgz
     version: 9.0.1
-generated: 2020-03-30T15:24:16.0681685-07:00
+generated: "2021-09-14T15:29:55.943562-07:00"
